@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Actualizando conocimeintos HTML</title>
+		
+	</head>
+
+	<body>
+		
+		<h1>Titulos</h1>
+
+		<script>
+			/*clases core son object, number, array y string, las mas utilizadas
+            todas heredan de object*/
+
+            //Object
+            //coleccion de variables y funciones agrupadas de manera estructural
+            //las variables en un objeto se les llama propiedades
+            // y a las funciones metodos
+
+            var libroAngular = {
+                titulo: 'Desarrolo web agil',
+                autor: 'carlos azaustre',
+                paginas: 64,
+                formatos: ["PDF", "epub", "mobi"],
+                precio: 2.89,
+                publicado: false
+            };
+            //propiedades son pares clave-valor, se sepran por comas
+
+            //se acceden por notacion punto
+            libroAngular.titulo; // nos devuelve 'desarrollo web agil'
+
+            //noacion array
+            libroAngular['paginas']; //nos devuelve 64
+            
+            //podemos modificar valores
+            libroAngular.precio = 1.90;
+            libroAngular['publicado'] = true;
+
+            //acceder con variables
+            var propiedad = "autor";
+            libroAngular[propiedad];
+            //esta forma no funciona con la notacion punto
+
+            var libro2 = {
+                paginas: 70,
+                leer: function(){
+                    console.log("he leido el libro");
+                }
+            };
+
+            libro2.leer();
+		</script>
+
+	</body>
+</html>
