@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Actualizando conocimeintos HTML</title>
+		
+	</head>
+
+	<body>
+		<form action="">
+            <input type="text" id="num1">
+            <input type="text" id="num2">
+            <input type="button" value="sumar" onclick="alert(sumar());">
+        </form>
+		<h1>Titulos</h1>
+
+		<script>
+			function sumar(num1, num2){
+                var num1 = parseFloat(document.getElementById("num1").value);
+                var num2 = parseFloat(document.getElementById("num2").value);
+
+                var resultado = num1 + num2;
+                return resultado;
+
+            }
+		</script>
+
+	</body>
+</html>
