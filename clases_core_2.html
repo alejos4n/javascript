@@ -51,6 +51,34 @@
             };
 
             libro2.leer();
+
+            //para crear un objeto
+            var miobjeto = {propiedad: "valor"};
+            var miobjeto = new Object({ propiedad: "valor"});
+
+            //anidacion
+
+            var libro = {
+                titulo: "Desarrolo web agil",
+                autor: {
+                    nombre: "carlos azaustre",
+                    nacionalidad: "espanola",
+                    edad: 30,
+                    contacto: {
+                        email: "calos@carlos.com",
+                        twitter: "@carlos"
+                    }
+                },
+                editorial: {
+                    nombre: "carlos.es books",
+                    web: "http:carlos.com"
+                }
+            };
+            //accedemos con notacion punto array o mixto
+            libro.autor.nombre; // "carlos azaustre"
+            libro['autor']['edad']; //30
+            libro['editorial'].web; //http:carlos.com
+            libro.autor['contacto'].twitter; //@carlos
 		</script>
 
 	</body>
