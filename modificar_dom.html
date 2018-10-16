@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Actualizando conocimeintos HTML</title>
+		
+	</head>
+
+	<body>
+		
+		<ol id="lista">
+            <li id="primero">aqui va algo</li>
+            <li>y aquí tambien</li>
+        </ol>
+
+		<script>
+            /*var primerElemento = document.getElementById("primero");
+            primerElemento.textContent = "Nuevo texto";*/
+            var elemento = document.createElement("li"),
+                contenido = document.createTextNode("Nuevo texto");
+            
+            elemento.appendChild(contenido);
+            
+            var padre = document.getElementsByTagName("li")[0].parentNode,
+                referencia = document.getElementsByTagName("li")[0];
+            padre.replaceChild(elemento, referencia);
+           
+		</script>
+
+	</body>
+</html>

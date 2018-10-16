@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Actualizando conocimeintos HTML</title>
+		
+	</head>
+
+	<body>
+		
+		<ol id="lista">
+            <li>aqui va algo</li>
+            <li>y aquí tambien</li>
+        </ol>
+
+		<script>
+			var elemento = document.createElement("li"),
+                contenido = document.createTextNode("Nuevo texto");
+            elemento.appendChild(contenido);
+            
+            var padre = document.getElementsByTagName("li")[0].parentNode;
+            padre.appendChild(elemento);
+		</script>
+
+	</body>
+</html>
