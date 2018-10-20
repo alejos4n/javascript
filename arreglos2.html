@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Actualizando conocimeintos HTML</title>
+		
+	</head>
+
+	<body>
+		
+		<h1>Titulos</h1>
+
+		<script>
+			var myArray = [];
+            var myArray = new Array();
+            var myArray = [1, 2, 3, 4]; //array de numeros
+            var myArray = ["hola", "que ", "tal"]; //array de cadenas
+            var myArray = [{propiedad: "valor1"}, {propiedad: "valor2"}]; //array de objetos
+            var myArray = [[2,4], [3,6]]; //array de arrays
+            var myArray = [1, true, [3,2], "hola", {clave: "valor"}];
+            
+
+            //muestra la raiz cuadrada de los elementos del array
+            var miArray = [2, 4, 6, 8];
+            var raices = miArray.map(Math.sqrt);
+            document.write(raices);
+            var resultados = miArray.map(function(elemento) {
+                return elemento *= 2;
+            })
+            document.write("<br>" + resultados);
+            
+            var otroArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+            var resul = otroArray.filter(function(elemento) {
+                return elemento % 3 === 0;
+            })
+            document.write("<br>" + resul);
+
+
+
+		</script>
+
+	</body>
+</html>

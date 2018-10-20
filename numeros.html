@@ -11,7 +11,28 @@
 		<h1>Titulos</h1>
 
 		<script>
-			
+			/* //	Número	entero,	25
+                25
+                //	Número	entero,	25.5.	Los	decimales	se	separan	de	la	parte	entera	con	punto	`.`
+                25.5
+                //	Número	hexadecimal,	se	representa	con	0x	seguido	del	número	hexadecimal
+                0x1F		//	31	decimal
+                0xFF		//	255	decimal
+                0x7DE	//	2014
+                //	Coma	flotante,	separamos	la	mantisa	del	exponente	con	la	letra	`e`
+                5.4e2	//	Representa	5.4	*	10	elevado	a	2	=	540
+            */
+
+            document.write(25 + " numero entero <br>");
+            document.write(25.5 + " numero entero <br>");
+            document.write(0x1f + " hexdecimal imprime 31 (0x1f) <br>");
+            document.write(0xff + " hexdecimal imprime 255 (0xff) <br>");
+            document.write(5.4e2 + " 5.4 * 10 elevao a la 2 = 540 <br>")
+            
+            parseInt("1111");					//	Devuelve	1111
+            parseInt("1111",	2);		//	Devuelve	15
+            parseInt("1111",	16);	//	Devuelve	4369
+            document.write((15).toString(2));
 		</script>
 
 	</body>
